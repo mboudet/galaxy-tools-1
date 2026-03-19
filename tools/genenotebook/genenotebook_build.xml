@@ -72,6 +72,7 @@
         #for exp in $annot.expression:
                 genoboo add expression @CONNECT_INFO@
                     --annot '${annot.annot}'
+                    --genome '${genome.name}'
                     --sample-description ''
                     ${exp.public}
                     #for replica in $exp.expression_replicas:
